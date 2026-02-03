@@ -1,39 +1,31 @@
+index.html
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tic-Tac-Toe Game</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
+<head>
+  <meta charset="UTF-8">
+  <title>Birthday Quest for Bupsu</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-  <body>
-    <!-- Winner / Draw Message -->
-    <div class="msg-container hide">
-      <p id="msg">Winner</p>
-      <button id="new-btn">New Game</button>
-    </div>
+  <div class="card">
+    <h1>Hi Bupsu 💙</h1>
+    <p>Solve this to unlock your birthday surprise 🎂</p>
 
-    <main>
-      <h1>Tic Tac Toe</h1>
+    <label>1. What do I call you when I feel most safe?</label>
+    <input type="text" id="q1">
 
-      <div class="container">
-        <div class="game">
-          <button class="box"></button>
-          <button class="box"></button>
-          <button class="box"></button>
-          <button class="box"></button>
-          <button class="box"></button>
-          <button class="box"></button>
-          <button class="box"></button>
-          <button class="box"></button>
-          <button class="box"></button>
-        </div>
-      </div>
+    <label>2. What connects us even when distance tries to separate us?</label>
+    <input type="text" id="q2">
 
-      <button id="reset-btn">Reset Game</button>
-    </main>
+    <label>3. This surprise is made with only one feeling. What is it?</label>
+    <input type="text" id="q3">
 
-    <script src="app.js"></script>
-  </body>
+    <button onclick="checkAnswers()">Unlock 🎁</button>
+
+    <p id="error"></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
 </html>
